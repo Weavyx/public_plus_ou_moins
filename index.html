@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4YL8LEXNB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N4YL8LEXNB');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Plus ou moins</title>
+    <link rel="icon" type="image/png" href="./assets/img/fav.png" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/query/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./assets/query/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <script src="./assets/query/jQuery-UI-Dialog-extended-master/jquery.dialogOptions.js"></script>
+
+    <script src="./assets/js/app.js" defer></script>
+</head>
+
+<body>
+    <div id="title">
+        <h1>Plus<span id="symbol">/</span>Moins</h1>
+        <h2>Trouvez le code secret entre 1 et 100 compris !</h2>
+    </div>
+    <section id="game">
+        <div id="infos">
+            <p id="countdown">Il ne vous reste plus que <span id="lives">8</span> vies !</p>
+            <p id="state"></p>
+            <div class="lives">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+                <img src="./assets/img/fingerprint.png" alt="fingerprint" class="life">
+            </div>
+        </div>
+        <div id="numpad">
+            <div class="arrows" id="more"></div>
+            <input id="screen" type="number"></input>
+            <div id="buttons">
+                <button class="btn num">1</button>
+                <button class="btn num">2</button>
+                <button class="btn num">3</button>
+                <button class="btn num">4</button>
+                <button class="btn num">5</button>
+                <button class="btn num">6</button>
+                <button class="btn num">7</button>
+                <button class="btn num">8</button>
+                <button class="btn num">9</button>
+                <button class="btn action" id="reset">RESET</button>
+                <button class="btn num">0</button>
+                <button class="btn action" id="submit">ENTER</button>
+            </div>
+            <div class="arrows" id="less"></div>
+        </div>
+    </section>
+    <div id="dialog">
+        <form method="dialog"></form>
+        <label for="btn"></label>
+        <p><button class="replayButton" id="btn">Rejouer</button></p>
+
+    </div>
+</body>
+
+</html>
