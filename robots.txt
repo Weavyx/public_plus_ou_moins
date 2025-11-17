@@ -1,0 +1,12 @@
+# robots.txt pour plus-ou-moins.maximenardelli.fr
+# Dernière mise à jour : 17 novembre 2025
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+# Sitemap
+Sitemap: https://plus-ou-moins.maximenardelli.fr/sitemap.xml
+
+# Crawl delay pour les bots
+Crawl-delay: 1
